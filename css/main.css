@@ -110,8 +110,8 @@ main {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50px 1fr 50px;
-      grid-template-columns: 50px 1fr 50px;
+  -ms-grid-columns: 70px 1fr 70px;
+      grid-template-columns: 70px 1fr 70px;
   -ms-grid-rows: 800px 800px 800px 800px 30px;
       grid-template-rows: 800px 800px 800px 800px 30px;
 }
@@ -156,9 +156,101 @@ main .sec-one .by {
 }
 
 main .sec-two {
+  width: 100%;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+      grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+  -ms-grid-rows: 60px 60px 60px 1fr 180px;
+      grid-template-rows: 60px 60px 60px 1fr 180px;
+}
+
+main .sec-two h1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  color: #ffff;
+  line-height: 60px;
+  font-family: "Oswald", sans-serif;
+  background: #000;
+  padding-left: 50px;
+  font-size: 35px;
+}
+
+main .sec-two .sec-box {
+  grid-column: 5/-1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background-color: #bbb8b8;
+}
+
+main .sec-two .f1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+main .sec-two .f2 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+main .sec-two .f3 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5/6;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+main .sec-two .f4 {
+  grid-column: 7/-1;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+main .sec-two figure {
+  border: 1px solid black;
+  padding: 100px;
+}
+
+main .sec-two figure img {
+  width: 100%;
+}
+
+main .sec-two a {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
+  grid-row: 5/-1;
+  text-align: center;
+  padding-top: 30px;
+  text-decoration: none;
+  color: #000;
+}
+
+main .sec-two a h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 50px;
 }
 
 main .sec-three {
