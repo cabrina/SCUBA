@@ -382,7 +382,7 @@ main .sec-three a {
   grid-column: 1/-1;
   grid-row: 6/-1;
   text-align: center;
-  padding-top: 60px;
+  padding: 60px 0;
   text-decoration: none;
   color: #000;
 }
@@ -393,11 +393,95 @@ main .sec-three a h2 {
 }
 
 main .sec-four {
+  padding-top: 60px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 60px 1fr;
+      grid-template-columns: 1fr 60px 1fr;
+  -ms-grid-rows: 60px 60px 60px 1fr 140px;
+      grid-template-rows: 60px 60px 60px 1fr 140px;
+}
+
+main .sec-four h1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  color: #ffff;
+  line-height: 60px;
+  font-family: "Oswald", sans-serif;
+  background: #000;
+  padding-left: 50px;
+  font-size: 35px;
+}
+
+main .sec-four .sec-box {
+  grid-column: 3/-1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background-color: #bbb8b8;
+}
+
+main .sec-four .sec-4-box {
+  grid-column: 1/-1;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid black;
+}
+
+main .sec-four .sec-4-box .text {
+  width: 60%;
+  padding: 110px 330px 0 150px;
+}
+
+main .sec-four .sec-4-box .text h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+
+main .sec-four .sec-4-box .text p {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+main .sec-four .sec-4-box .img-box {
+  width: 40%;
+}
+
+main .sec-four .sec-4-box .img-box img {
+  height: 200px;
+}
+
+main .sec-four a {
+  grid-column: 1/-1;
+  grid-row: 5/-1;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  padding-top: 60px;
+}
+
+main .sec-four a h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 50px;
 }
 /*# sourceMappingURL=main.css.map */
