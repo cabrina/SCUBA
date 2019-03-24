@@ -165,8 +165,8 @@ main .sec-two {
   grid-row: 2/3;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
-      grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+  -ms-grid-columns: 1fr 60px 1fr 60px 1fr 60px 1fr;
+      grid-template-columns: 1fr 60px 1fr 60px 1fr 60px 1fr;
   -ms-grid-rows: 60px 60px 60px 1fr 180px;
       grid-template-rows: 60px 60px 60px 1fr 180px;
 }
@@ -230,11 +230,26 @@ main .sec-two .f4 {
 
 main .sec-two figure {
   border: 1px solid black;
-  padding: 100px;
+  padding: 50px;
 }
 
 main .sec-two figure img {
   width: 100%;
+}
+
+main .sec-two figure figcaption {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #cac9c9;
+  font-size: 30px;
+  text-align: center;
+}
+
+main .sec-two figure span {
+  display: block;
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 10px;
 }
 
 main .sec-two a {

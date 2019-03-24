@@ -121,7 +121,7 @@ main{
         grid-column: 2/3;
         grid-row: 2/3;
         display: grid;
-        grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+        grid-template-columns: 1fr 60px 1fr 60px 1fr 60px 1fr;
         grid-template-rows: 60px 60px 60px 1fr 180px;
 
         h1{
@@ -159,10 +159,22 @@ main{
 
         figure{
             border: 1px solid black;
-
-            padding: 100px;
+            padding: 50px;
             img{
                 width: 100%;
+            }
+            figcaption{
+                font-family: $f-tall;
+                color: rgb(202, 201, 201);
+                font-size: 30px;
+                text-align: center;
+            }
+            span{
+                display: block;
+                color: #000;
+                font-size: 15px;
+                font-weight: bold;
+                padding-top: 10px;
             }
         }
         
